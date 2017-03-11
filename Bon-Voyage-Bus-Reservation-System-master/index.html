@@ -1,0 +1,111 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <header> <title>Bon Voyage</title>
+</header>      <script type="text/javascript" src="Javascript\home.js"> </script>
+        <link rel="stylesheet" href="CSS\home.css"> 
+        <style>
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                width: 100%;
+                background-color: green;
+                cursor: pointer;
+                }
+            li a{
+                display: block;
+                text-decoration: none;
+                padding: 16px 25px;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+            }
+            li{
+                float: left;
+            }
+            li a:link{
+                background-color:green;
+                color: white;
+            }
+            li a:active{
+                background-color: darkgreen;
+                color: white;
+            }
+            
+            li a:hover{
+                background-color: #000000;
+                color: #ffffff;
+            }
+            .button{
+                background-color: green;
+                padding: 14px 40px;
+                color: white;
+                border-radius: 2px;
+                text-decoration: none;
+                text-align: center;
+                font-size: 30px;
+                font-family: sans-serif;
+                cursor: pointer;
+            }
+            .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+            
+            </style>
+    </head>
+    <body><header>
+        <img id="logo" src="Images/bus_logo.png" alt="Logo" >
+        <h1 id="heading">
+            BON VOYAGE
+        </h1>
+        <h5 id="motto">
+            Best buses for every trip!
+        </h5>
+        
+        <ul>
+          
+            <li><a id="Home" onclick="window.location,href='index.html'" ><div>HOME</div></a></li>
+           
+            <li style="float:right"><a href="#about"><div>ABOUT</div></a></li>
+        </ul>
+        </header> 
+ <div class="w3-content w3-display-container">
+  <img class="mySlides" src="Images/au3.jpg" style="width:100%">
+  <img class="mySlides" src="Images/au1.jpg" style="width:100%">
+  <img class="mySlides" src="Images/au2.jpg" style="width:100%">
+
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+        
+        <b id="book">BOOK YOUR TICKETS HERE        <button class="button" onclick="window.location.href='index1.html'" id="btn" float="right">BOOK</button>
+</b>
+
+      
+     
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+    </body>
+</html>

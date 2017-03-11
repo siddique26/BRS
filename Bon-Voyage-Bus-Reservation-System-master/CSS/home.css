@@ -1,0 +1,39 @@
+body {
+    background-color: #ffffff;
+}
+#heading {
+    font-family: "Spinnaker", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: #1C3353;
+    line-height: 1px;
+
+}
+#motto {
+    font-family: "Spinnaker", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: #1C3353;
+    }
+#logo {
+
+    height: 70px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Home
+{
+    font-family: "Spinnaker",sans-serif;
+}
+#Book
+{
+        font-family: "Spinnaker",sans-serif;
+    color: forestgreen;
+    text-align: center;
+    text-decoration: none;
+    font-size: 50px;
+    padding-left: 200px;
+    padding-right: 500px;
+}

@@ -1,0 +1,104 @@
+<! DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <header> <title>Bon Voyage</title>
+</header> 
+        <link rel="stylesheet" href="CSS/book.css">
+        <style>
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                width: 100%;
+                background-color: green;
+                cursor: pointer;
+                }
+            li a{
+                display: block;
+                text-decoration: none;
+                padding: 16px 25px;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+            }
+            li{
+                float: left;
+            }
+            li a:link{
+                background-color:green;
+                color: white;
+            }
+            li a:active{
+                background-color: darkgreen;
+                color: white;
+            }
+            
+            li a:hover{
+                background-color: #000000;
+                color: #ffffff;
+            }
+            .button{
+                background-color: green;
+                padding: 14px 40px;
+                color: white;
+                border-radius: 2px;
+                text-decoration: none;
+                text-align: center;
+                font-size: 30px;
+                font-family: sans-serif;
+                cursor: pointer;
+            }
+            input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            }
+            .b{
+                padding-top: 30px;
+            }
+            .btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+            .btn:hover{
+                background-color: green;
+            }
+
+            </style>
+    </head>
+    <body><header>
+        <img id="logo" src="Images/bus_logo.png" alt="Logo" >
+        <h1 id="heading">
+            BON VOYAGE
+        </h1>
+        <h5 id="motto">
+            Best buses for every trip!
+        </h5>
+        
+        <ul>
+          
+            <li><a id="Home" onclick="window.location.href='index.html'"><div>HOME</div></a></li>
+           
+            <li style="float:right"><a href="#about"><div>ABOUT</div></a></li>
+        </ul>
+        </header> 
+        <form>
+            <label for="from" id="from" ><b>FROM</b></label>
+            <input type="text" name="from" placeholder="Enter Place"><br>
+            <label for="to" id="to"><b>TO</b></label>
+            <input type="text" name="to" placeholder="Enter Destination"><br>
+           
+        </form>
+        <button class="btn" onclick="window.location.href='index2.html'">BOOK</button>
+    </body>
+</html>
